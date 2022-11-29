@@ -19,7 +19,7 @@
 }
 
 .isotipo{
-  height: 80px;
+  height: 60px;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -28,7 +28,6 @@
 .home-slider-img{
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs//Movile/r-architecture-2gDwlIim3Uw-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +35,6 @@
 
 .home-message{
   width: 100%;
-  max-width: 375px;
   height: 150px;
   color: var(--secondary);
   display: flex;
