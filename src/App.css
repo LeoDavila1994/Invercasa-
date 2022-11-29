@@ -1,0 +1,86 @@
+:root{
+  --primary: #313132;
+  --secondary: whitesmoke;
+  --title-font: 'Alexandria', sans-serif;
+}
+
+/* Home */
+
+.home-container{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.home-slider{
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+
+.isotipo{
+  height: 80px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.home-slider-img{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs//Movile/r-architecture-2gDwlIim3Uw-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-message{
+  width: 100%;
+  max-width: 375px;
+  height: 150px;
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--title-font);
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+
+.home-options{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-options-container-img{
+  width: 100%;
+  height: 405px;
+}
+
+.options-img{
+  width: 100%;
+  height: 137px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Imgs/Options/breno-assis-r3WAWU5Fi5Q-unsplash.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options-img p{
+  color: var(--secondary);
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-family: var(--title-font);
+}
+
