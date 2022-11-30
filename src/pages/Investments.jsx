@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Inversiones = () => {
+const Investments = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Inversiones = () => {
   );
 };
 
-export default Inversiones;
+export default Investments;
