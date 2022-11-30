@@ -1,6 +1,6 @@
 :root{
   --primary: #313132;
-  --secondary: whitesmoke;
+  --secondary: rgb(240, 228, 228);
   --title-font: 'Alexandria', sans-serif;
 }
 
@@ -49,23 +49,18 @@
   border-bottom: 1px solid var(--secondary);
 }
 
-.home-options{
+.home-options-container{
   width: 100%;
+  height: calc(100% - 424px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  gap: 1px;
 }
 
-.home-options-container-img{
+.option-container{
   width: 100%;
-  height: 405px;
-}
-
-.options-img{
-  width: 100%;
-  height: 137px;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Imgs/Options/breno-assis-r3WAWU5Fi5Q-unsplash.jpg");
+  height: 163px;
+  border-bottom: 1px solid var(--secondary);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,11 +69,10 @@
   align-items: center;
 }
 
-.options-img p{
+.option-container p{
   color: var(--secondary);
-  margin: 0;
-  font-size: 1.5rem;
   letter-spacing: 4px;
-  font-family: var(--title-font);
+  font-size: 1.5rem;
 }
+
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import isotipo from "../Imgs/logos/logo trans.png"
-import sliderImg from "../Imgs/Movile/r-architecture-2gDwlIim3Uw-unsplash.jpg";
+import sliderImg from "../Imgs/Movile/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg";
+import Options from "../components/Options";
+import house from "../Imgs/Options/breno-assis-r3WAWU5Fi5Q-unsplash.jpg";
+import inver from "../Imgs/Options/inversion.jpg";
+import sales from "../Imgs/Options/bussines.jpg";
 
 const Home = () => {
   return (
@@ -12,13 +16,10 @@ const Home = () => {
       <div className='home-message'>
         <p>TU CASA TU MEJOR INVERSION</p>
       </div>
-      <div className='home-options'>
-        <div className='home-options-container-img'>
-          <div className='options-img'>
-            <p>Viviendas</p>
-          </div>
-        </div>
-        <div className='home-options-container-img2'></div>
+      <div className='home-options-container'>
+        <Options img={house} letter={"Viviendas"}/>
+        <Options img={sales} letter={"Inversiones"}/>
+        <Options img={inver} letter={"Vende tu casa"}/>
       </div>
     </div>
   );
