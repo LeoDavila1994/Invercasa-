@@ -15,6 +15,16 @@ const Home = () => {
 
   const [randomImg, setRandomImg] = useState(Math.floor(Math.random() * banner.length));
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    if(menuOpen === false){
+      setMenuOpen(true);
+    } else {
+      setMenuOpen(false)
+    }
+  };
+
   const incrementImg = () => {
     if(randomImg === 3){
       setRandomImg(0);
@@ -31,16 +41,25 @@ const Home = () => {
   return (
     <div className='home-container'>
       <article className='home-slider'>
-        <header className='navbar'>
-          <p>PLUS</p>
-          <img src={isotipo} className='isotipo'></img>
+        <header className={menuOpen? "navbar navbar-bg-open" : "navbar navbar-bg-close"}>
+          <div className={menuOpen? "logo-container-invisible" : "logo-container-visible"}>
+            <p>PLUS</p>
+            <img src={isotipo} className='isotipo'></img>
+          </div>
           <input type="checkbox" id='menu'></input>
-          <label htmlFor="menu" className='menu'>
+          <label htmlFor="menu" className='menu' onClick={openMenu}>
             <div className='icon-1'></div>
             <div className="icon-2"></div>
           </label>
+          <div className='menu-list'>
+              {/* <p>Inicio</p>
+              <p>Sobre Nosotros</p>
+              <p>Viviendas</p>
+              <p>Inversiones</p>
+              <p>Venta</p> */}
+          </div>
         </header>
-        <div className='home-slider-img' style={{backgroundImage: `linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${banner[randomImg]})`}}></div>
+        <div className='home-slider-img' style={{backgroundImage: `url(${banner[randomImg]})`}}></div>
       </article>
       <div className='home-message'>
         <p>TU CASA TU MEJOR INVERSION</p>
