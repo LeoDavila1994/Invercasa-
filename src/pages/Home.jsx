@@ -15,9 +15,18 @@ const Home = () => {
 
   const [randomImg, setRandomImg] = useState(Math.floor(Math.random() * banner.length));
 
+  const incrementImg = () => {
+    if(randomImg === 3){
+      setRandomImg(0);
+    } else {
+      setRandomImg(randomImg + 1)
+    }
+  };
+
   useEffect(() => {
-    setInterval(() => setRandomImg(Math.floor(Math.random() * banner.length)), 8000)
-  },[]);
+    setTimeout(incrementImg, 8000)
+  },[randomImg]);
+
 
   return (
     <div className='home-container'>
