@@ -39,9 +39,9 @@ const Home = () => {
         <p>TU CASA TU MEJOR INVERSION</p>
       </div>
       <div className='home-options-container'>
-        <Options img={house} letter={"Viviendas"}/>
-        <Options img={sales} letter={"Inversiones"}/>
-        <Options img={inver} letter={"Vende tu casa"}/>
+        <Options img={house} letter={"Viviendas"} route={"viviendas"}/>
+        <Options img={sales} letter={"Inversiones"} route={"inversiones"}/>
+        <Options img={inver} letter={"Vende tu casa"} route={"venta"}/>
       </div>
     </div>
   );
