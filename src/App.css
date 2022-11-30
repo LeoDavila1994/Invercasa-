@@ -18,6 +18,14 @@
   position: relative;
 }
 
+.home-slider p{
+  position: absolute;
+  color: gold;
+  font-size: 1.1rem;
+  top: 8px;
+  left: 105px;
+}
+
 .isotipo{
   height: 60px;
   position: absolute;

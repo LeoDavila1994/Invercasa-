@@ -31,6 +31,7 @@ const Home = () => {
   return (
     <div className='home-container'>
       <article className='home-slider'>
+        <p>PLUS</p>
         <img src={isotipo} className='isotipo'></img>
         <div className='home-slider-img' style={{backgroundImage: `linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${banner[randomImg]})`}}></div>
       </article>
