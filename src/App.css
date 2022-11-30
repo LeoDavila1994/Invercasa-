@@ -1,6 +1,6 @@
 :root{
-  --primary: #313132;
-  --secondary: rgb(54, 233, 188);
+  --primary: #2d2d31;
+  --secondary: whitesmoke;
   --title-font: 'Alexandria', sans-serif;
 }
 
@@ -43,7 +43,7 @@
   font-family: var(--title-font);
   letter-spacing: 4px;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
   border-top: 1px solid var(--secondary);
   border-bottom: 1px solid var(--secondary);
@@ -72,11 +72,7 @@
 .option-container p{
   color: var(--secondary);
   letter-spacing: 4px;
-  line-height: 2;
   font-size: 1.5rem;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
