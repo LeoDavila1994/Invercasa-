@@ -51,10 +51,9 @@
 
 .home-options-container{
   width: 100%;
-  height: calc(100% - 424px);
+  height: calc(100% - 422px);
   display: flex;
   flex-direction: column;
-  gap: 1px;
 }
 
 .option-container{
