@@ -31,8 +31,15 @@ const Home = () => {
   return (
     <div className='home-container'>
       <article className='home-slider'>
-        <p>PLUS</p>
-        <img src={isotipo} className='isotipo'></img>
+        <header className='navbar'>
+          <p>PLUS</p>
+          <img src={isotipo} className='isotipo'></img>
+          <input type="checkbox" id='menu'></input>
+          <label htmlFor="menu" className='menu'>
+            <div className='icon-1'></div>
+            <div className="icon-2"></div>
+          </label>
+        </header>
         <div className='home-slider-img' style={{backgroundImage: `linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${banner[randomImg]})`}}></div>
       </article>
       <div className='home-message'>
