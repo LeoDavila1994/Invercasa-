@@ -1,6 +1,6 @@
 :root{
   --primary: #313132;
-  --secondary: rgb(240, 228, 228);
+  --secondary: rgb(54, 233, 188);
   --title-font: 'Alexandria', sans-serif;
 }
 
@@ -72,7 +72,11 @@
 .option-container p{
   color: var(--secondary);
   letter-spacing: 4px;
+  line-height: 2;
   font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
